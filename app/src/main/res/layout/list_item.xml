@@ -27,7 +27,7 @@
             android:layout_height="wrap_content"
             android:textSize="18sp"
             android:textStyle="bold"
-            android:text="Название задачи" />
+            android:text="@string/Nazvanije_zadachi" />
 
         <!-- Описание -->
         <TextView
@@ -35,7 +35,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="16sp"
-            android:text="Описание задачи" />
+            android:text="@string/Opisanije_zadachi" />
     </LinearLayout>
 
 </LinearLayout>

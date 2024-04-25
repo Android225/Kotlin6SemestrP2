@@ -14,7 +14,7 @@
             android:id="@+id/listViewTasks"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="0dp"
+            android:layout_marginTop="@dimen/zero"
             android:visibility="visible" />
     </FrameLayout>
 
@@ -33,46 +33,46 @@
         android:layout_alignParentBottom="true"
         android:background="@color/white"
         android:orientation="horizontal"
-        android:paddingTop="0dp"
-        android:paddingBottom="0dp">
+        android:paddingTop="@dimen/zero"
+        android:paddingBottom="@dimen/zero">
 
         <!-- Кнопка "Дом" -->
         <Button
             android:id="@+id/buttonHome"
             android:text=""
-            android:layout_width="0dp"
+            android:layout_width="@dimen/zero"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@android:color/transparent"
             android:drawableTop="@drawable/home4"
-            android:drawablePadding="8dp"
+            android:drawablePadding="@dimen/margin_small"
             android:onClick="onClickHome"
-            android:contentDescription="Изображение кнопки Дом"/>
+            android:contentDescription="@string/btnDescripHome"/>
 
         <!-- Кнопка "Календарь" -->
         <Button
             android:id="@+id/buttonCalendar"
             android:text=""
-            android:layout_width="0dp"
+            android:layout_width="@dimen/zero"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@android:color/transparent"
             android:drawableTop="@drawable/calendar2"
             android:drawablePadding="15dp"
             android:onClick="onClickCalendar"
-            android:contentDescription="Изображение кнопки календарь"/>
+            android:contentDescription="@string/btnDescripCalendar"/>
 
         <!-- Кнопка "Поиск" -->
         <Button
             android:id="@+id/buttonSearch"
-            android:layout_width="0dp"
+            android:layout_width="@dimen/zero"
             android:text=""
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@android:color/transparent"
             android:drawableTop="@drawable/loop1"
-            android:drawablePadding="8dp"
+            android:drawablePadding="@dimen/margin_small"
             android:onClick="onClickSearch"
-            android:contentDescription="Изображение кнопки поиск"/>
+            android:contentDescription="@string/btnDescripSearch"/>
     </LinearLayout>
 </RelativeLayout>
