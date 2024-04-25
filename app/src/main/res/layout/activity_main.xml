@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".fragments.MainFragment">
 
     <!-- Фрейм для отображения содержимого -->
     <FrameLayout
@@ -46,7 +49,7 @@
             android:background="@android:color/transparent"
             android:drawableTop="@drawable/home4"
             android:drawablePadding="@dimen/margin_small"
-            android:onClick="onClickHome"
+
             android:contentDescription="@string/btnDescripHome"/>
 
         <!-- Кнопка "Календарь" -->
@@ -59,7 +62,7 @@
             android:background="@android:color/transparent"
             android:drawableTop="@drawable/calendar2"
             android:drawablePadding="15dp"
-            android:onClick="onClickCalendar"
+
             android:contentDescription="@string/btnDescripCalendar"/>
 
         <!-- Кнопка "Поиск" -->
@@ -72,7 +75,7 @@
             android:background="@android:color/transparent"
             android:drawableTop="@drawable/loop1"
             android:drawablePadding="@dimen/margin_small"
-            android:onClick="onClickSearch"
+
             android:contentDescription="@string/btnDescripSearch"/>
     </LinearLayout>
 </RelativeLayout>

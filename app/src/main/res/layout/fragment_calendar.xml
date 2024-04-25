@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".fragments.FragmentCalendar">
 
     <!-- Фрейм для отображения содержимого -->
     <FrameLayout
@@ -38,7 +41,7 @@
 
         <!-- Кнопка "Дом" -->
         <Button
-            android:id="@+id/buttonHome"
+            android:id="@+id/buttonHomeCal"
             android:text=""
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -46,12 +49,12 @@
             android:background="@android:color/transparent"
             android:drawableTop="@drawable/home4"
             android:drawablePadding="8dp"
-            android:onClick="onClickHome"
+
             android:contentDescription="Изображение кнопки Дом"/>
 
         <!-- Кнопка "Календарь" -->
         <Button
-            android:id="@+id/buttonCalendar"
+            android:id="@+id/buttonCalendarCal"
             android:text=""
             android:layout_width="@dimen/zero"
             android:layout_height="wrap_content"
@@ -59,12 +62,12 @@
             android:background="@android:color/transparent"
             android:drawableTop="@drawable/calendar2"
             android:drawablePadding="15dp"
-            android:onClick="onClickCalendar"
+
             android:contentDescription="Изображение кнопки календарь"/>
 
         <!-- Кнопка "Поиск" -->
         <Button
-            android:id="@+id/buttonSearch"
+            android:id="@+id/buttonSearchCal"
             android:layout_width="@dimen/zero"
             android:text=""
             android:layout_height="wrap_content"
@@ -72,7 +75,7 @@
             android:background="@android:color/transparent"
             android:drawableTop="@drawable/loop1"
             android:drawablePadding="@dimen/margin_small"
-            android:onClick="onClickSearch"
+
             android:contentDescription="Изображение кнопки поиск"/>
     </LinearLayout>
 </RelativeLayout>

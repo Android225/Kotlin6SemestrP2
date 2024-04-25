@@ -2,7 +2,10 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".fragments.FragmentLoop">
 
     <!-- Кнопка "Назад" -->
     <Button
@@ -87,7 +90,7 @@
 
         <!-- Кнопка "Дом" -->
         <Button
-            android:id="@+id/buttonHome"
+            android:id="@+id/buttonHomeLp"
             android:text=""
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -95,12 +98,12 @@
             android:background="@android:color/transparent"
             android:drawableTop="@drawable/home4"
             android:drawablePadding="8dp"
-            android:onClick="onClickHome"
+
             android:contentDescription="@string/Homs"/>
 
         <!-- Кнопка "Календарь" -->
         <Button
-            android:id="@+id/buttonCalendar"
+            android:id="@+id/buttonCalendarLp"
             android:text=""
             android:layout_width="@dimen/zero"
             android:layout_height="wrap_content"
@@ -108,12 +111,12 @@
             android:background="@android:color/transparent"
             android:drawableTop="@drawable/calendar2"
             android:drawablePadding="15dp"
-            android:onClick="onClickCalendar"
+
             android:contentDescription="@string/loops"/>
 
         <!-- Кнопка "Поиск" -->
         <Button
-            android:id="@+id/buttonSearch"
+            android:id="@+id/buttonSearchLp"
             android:layout_width="@dimen/zero"
             android:text=""
             android:layout_height="wrap_content"
@@ -121,7 +124,8 @@
             android:background="@android:color/transparent"
             android:drawableTop="@drawable/loop1"
             android:drawablePadding="@dimen/margin_small"
-            android:onClick="onClickSearch"
+
             android:contentDescription="@string/serchs"/>
+
     </LinearLayout>
 </LinearLayout>

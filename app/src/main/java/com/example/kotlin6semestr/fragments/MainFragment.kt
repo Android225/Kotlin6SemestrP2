@@ -22,15 +22,17 @@ class  MainFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_main, container, false)
+        return inflater.inflate(R.layout.activity_main, container, false)
     }
+
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val bF1 = view.findViewById<Button>(R.id.button1)
-        val bF2 = view.findViewById<Button>(R.id.button2)
+        val bF1 = view.findViewById<Button>(R.id.buttonCalendar)
+        val bF2 = view.findViewById<Button>(R.id.buttonSearch)
         val controller = findNavController()
-        bF1.setOnClickListener { controller.navigate(R.id.fragment1) }
-        bF2.setOnClickListener {controller.navigate(R.id.fragment2)}
+        bF1.setOnClickListener { controller.navigate(R.id.fragmentCalendar2) }
+        bF2.setOnClickListener {controller.navigate(R.id.fragmentLoop2)
+        }
     }
 }
